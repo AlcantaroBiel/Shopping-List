@@ -1,0 +1,95 @@
+<html>
+    <body>
+        <head>
+            <style>
+                *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing:border-box;
+                }
+                header{
+                    background-color: #5a71bb;
+                    text-align: center;
+                    color:white;
+                    padding: 20px 0;
+                }
+
+                .lista-cadastro{
+                    display: flex;
+                    margin: 20px 0;
+                    padding: 0 20px;
+                }
+
+                .lista-cadastro input[type="text"]{
+                    flex: 1;
+                    height: 40px;
+                    padding-left: 20px;
+                }
+
+                .lista-cadastro input[type="number"]{
+                    flex: 1;
+                    height: 40px;
+                    padding-left: 20px;
+                }
+
+                .lista-produtos-single{
+                    padding: 10px 0;
+                    margin: 20px 0;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                }
+
+                .lista-produtos-single h3{
+                    flex:1;
+                    padding:0 20px;
+                }
+
+                h3.price-product{
+                    text-align: right;
+                    font-size: 17px;
+                    
+                }
+
+                h3.price-product > span{
+                    background-color: #5a71bb;
+                    padding: 8px 10px;
+                    border: 3px solid #4f65ab; 
+                    border-radius: 20px;
+                    color: white;
+                }
+                .soma-produto{
+                    float: right;
+                    margin: 20px;
+                }
+
+                button{
+                    background-color: #5a71bb;
+                    margin-top: 20px;
+                    padding: 8px 10px;
+                    border: 3px solid #4f65ab; 
+                    border-radius: 20px;
+                    color: white;
+                    float: right;
+                }
+            </style>
+        </head>
+        <header>
+            <h2>App Lista de Supermercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="nome do produto..." name="nome_produto"/>
+            <input type="number" placeholder="valor do produto..." name="price"/>
+            <input type="submit" name="acao" value="Cadastrar"/>
+        </div>
+
+        <div class="lista-produtos">
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: R$0.00</h1>
+        </div>
+
+        <button name="limpar">Limpar</button>
+        <script src="supermercado.js"></script>
+    </body>
+</html>
